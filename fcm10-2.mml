@@ -1,0 +1,60 @@
+#BGM	1
+
+#Code "bin/nsd.bin"
+
+#octaveReverse
+
+#title		""
+#composer	"hebo-MAI"
+
+E(0){	L 12 R (10,2,8) L 1 }
+E(1){	6 L 12 R (10,2,8) L 1 }
+E(10){	(4,1,15) L 1 }
+E(100){	0 D30 L (1,-2,7) (-1,2,7) }
+E(200){	L 2 R 2 D8 L 0 }
+E(201){	2 L 1 R 1 D8 L 0 }
+E(205){	2 2 2 L 1 R 1 D8 L 0 }
+E(210){	L 2 R L 0 }
+E(211){	2 L 1 R L 0 }
+E(300){	L 0 R L 0 D118 12 D118 24 D118 }
+/* memo: エンベロープのDnは、その前の数値と合わせてn+2フレーム? */
+
+Sub(100){	Ev0 Em100 E@200 o4 l8 v12 q1 }
+Sub(1000){	r1r1 }
+Sub(101){	|: b4rb<dc"bc "a4rdd4>f+4 g4rggf+ga b4rf+f+4ed \ c4rcef+ge  | f+4rdf+gab< c4rcc>ba<cd4c>ba4d4 :| }
+Sub(102){	e4ref+gaf+ g4rdf+gab `c4b4a4g4 g2f+2 g1.. Ev1 }
+Sub(110){	E@201 En300 o4 l8 v12 }
+
+Sub(200){	Ev0 Em100 E@200 o4 l8 v10 q1 }
+Sub(201){	|: g4rgg4.r   f+4rf+f+4d4 e4ree4.r  g4rdd4>b4 \ g4rg`c4.g< | d4r>aa4<d4 g4rgg4dg b4agf+4..r16 :|}
+Sub(202){	o4 c4rcc4e4   d4r>bb4<d4 e4d4c4"b4 d2c2 "b2.c4d2. }
+Sub(210){	E@200 En300 o4 l8 v10 q2 }
+
+Sub(300){	Rm0    o3 l8 q6 }
+Sub(301){	[4 g:<dgd> ] dga |: [2g<dgd>] [2f+<df+d>] [2eb`eb] da`da<f+d>af+ \ [2cg`cg] [2da`da] [2cg`cg] da`da<f+d>af+ :| }
+Sub(302){	< [2"aeae] "gdgd`dbgd "gg "ff+ "ee [5"dd] > [3"gg] "aa [4"bb] }
+Sub(310){	o4 l8 q6}
+/* Sub(310)の r4 は 311から再生する時だけつける */
+
+Sub(111){	|: ef+g4.ef+gaf+d4.rg>ga<dc4.>bab<cd \ >b2r4 ab`c4rab<cd"b e4rcef+)E@205ga) g2r4agf+32g32f+2^16r8 v12E@201 :| }
+Sub(211){	|: r4 e4.cd4.r "b4.c>b4f+g a4.gf+4g\a  g4.g<d4.r >a4.ff4bg< c4.>g<cd)ef+)e2.f+ed+2. v10 :| }
+Sub(311){	     |: "cc"cc >"bb"bb < "dd"dd > "gg"gg \ [4"aa] [4"bb] "ff"ff"gg"gg < "cc"cc [6"dd] > [4"bb] < :| }
+
+Sub(112){	 e2r4 ef+					| g4rgf+gf+e		| d4rgc4 >ab	|`cba gg4f+a	| g2r4 }
+Sub(212){	b<c2r4cd					| e4rcd ed c		|"b4ree4  cd	| edc"bd4c4>	| b2r4 }
+Sub(312){	"aa"aa "f+f+"f+f+ <  "cc"dd"ee [3"cc] "dd"dd > 	|"gg"gg<"ee>"aa	| [3"gg]aa<	| "dd"dd>"gg }
+
+Sub(113){	En*@0v12Ev10o4	a4 b2a2 		| g4r2.r2 }
+Sub(213){	En*@0v10Ev10o4	f+4 d2f+2		| e4r2.r2 }
+Sub(313){			 	o4	"dd "gg"gg"dd"dd| [4"cc]"c2 }
+
+Sub(120){	q5	g4f+4	| q0E@211 g1r1 }
+Sub(220){	q5	d4c4	| q0E@210"b1r1 }
+Sub(320){		r2		| [4"gdgd] }
+
+BGM(0) {
+	t120
+	TR1 S100 /**/ L S1000 S101 /**/ S102 /**/ S110 /**/ S111 S112 /**/ S113 /**/ S110 S120 S100
+	TR2 S200 /**/ L S1000 S201 /**/ S202 /**/ S210 /**/ S211 S212 /**/ S213 /**/ S210 S220 S200
+	TR3 S300 /**/ L       S301 /**/ S302 /**/ S310 /**/ S311 S312 /**/ S313 /**/ S310 S320 S300
+}
