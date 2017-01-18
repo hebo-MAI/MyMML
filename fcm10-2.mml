@@ -4,7 +4,7 @@
 
 #octaveReverse
 
-#title		"‚¿‚¢‚³‚È¢ŠE"
+#title		"ã¡ã„ã•ãªä¸–ç•Œ"
 #composer	"hebo-MAI"
 
 E(0){	L 12 R (10,2,8) L 1 }
@@ -17,7 +17,7 @@ E(205){	2 2 2 L 1 R 1 D8 L 0 }
 E(210){	L 2 R L 0 }
 E(211){	2 L 1 R L 0 }
 E(300){	L 0 R L 0 D118 12 D118 24 D118 }
-/* memo: ƒGƒ“ƒxƒ[ƒv‚ÌDn‚ÍA‚»‚Ì‘O‚Ì”’l‚Æ‡‚í‚¹‚Än+2ƒtƒŒ[ƒ€? */
+/* memo: ã‚¨ãƒ³ãƒ™ãƒ­ãƒ¼ãƒ—ã®Dnã¯ã€ãã®å‰ã®æ•°å€¤ã¨åˆã‚ã›ã¦n+2ãƒ•ãƒ¬ãƒ¼ãƒ ? */
 
 Sub(100){	Ev0 Em100 E@200 o4 l8 v12 q1 }
 Sub(1000){	r1r1 }
@@ -32,9 +32,9 @@ Sub(210){	E@200 En300 o4 l8 v10 q2 }
 
 Sub(300){	Rm0    o3 l8 q6 }
 Sub(301){	[4 g:<dgd> ] dga |: [2g<dgd>] [2f+<df+d>] [2eb`eb] da`da<f+d>af+ \ [2cg`cg] [2da`da] [2cg`cg] da`da<f+d>af+ :| }
-Sub(302){	< [2"aeae] "gdgd`dbgd "gg "ff+ "ee [5"dd] > [3"gg] "aa [4"bb] }
+Sub(302){	< [2"aeae] "gdgd`dbgd "gg "f+f+ "ee [5"dd] > [3"gg] "aa [4"bb] }
 Sub(310){	o4 l8 q6}
-/* Sub(310)‚Ì r4 ‚Í 311‚©‚çÄ¶‚·‚éŽž‚¾‚¯‚Â‚¯‚é */
+/* Sub(310)ã® r4 ã¯ 311ã‹ã‚‰å†ç”Ÿã™ã‚‹æ™‚ã ã‘ã¤ã‘ã‚‹ */
 
 Sub(111){	|: ef+g4.ef+gaf+d4.rg>ga<dc4.>bab<cd \ >b2r4 ab`c4rab<cd"b e4rcef+)E@205ga) g2r4agf+32g32f+2^16r8 v12E@201 :| }
 Sub(211){	|: r4 e4.cd4.r "b4.c>b4f+g a4.gf+4g\a  g4.g<d4.r >a4.ff4bg< c4.>g<cd)ef+)e2.f+ed+2. v10 :| }
