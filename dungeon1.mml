@@ -10,24 +10,24 @@ E(0) {	3 (6,8,4) L 5 6 6 R (6,1,9) L 1 }
 E(1) {	(12,-6,4) L 9 8 7 R (3,-3,3) }
 E(2) {	6 L 12 D3 (12,9,3) 10 D3 (10,13,3) R (10,2,4) 1 D4 L 0 }
 E(3) {	6 L 12 R (10,2,4) 1 D4 L 0 }
-E(100) { 0 D100  L (1,-2,7) (-1,2,7) }
+E(100) { 0 D30  L (1,-2,7) (-1,2,7) }
 E(101) { L 0 }
 
 $s4m = { En0 q0 o1c}
 $s4b = { q5 En1 o3c  }
 $s4s = { q8 En* o2g+ }
 
-Sub(100){	t96 Ev0 @2 o4 }
-Sub(101){	|: l2 age l4 \ fcd2.r r-1 :| `cgd2.r r-1 |: l2 dc"g l4 fed2.r r-1 \ > :| }
+Sub(100){	t96 Ev0 Em100 @2 }
+Sub(101){	o4 |: l2 age l4 \ fcd2.r r-1 :| `cgd2.r r-1 |: l2 dc"g l4 fed2.r r-1 \ > :| }
 Sub(102){	 }
 Sub(110){	 }
 Sub(111){	 }
-Sub(200){	/*Ev0 Em100 @2 o3 l8*/ }
-Sub(201){	 }
+Sub(200){	Ev1 @3 o5 l16 v4}
+Sub(201){	fr8dr4 er8dr4 cr8"ar4 gr8cr4 |: fr-8fr-4 \v2 :|v4 |: er-8er-4 \ v2 :| }
 Sub(202){	}
 Sub(210){	 }
 Sub(211){	 }
-Sub(300){	Rm0    o3 q1 }
+Sub(300){	o3 q1 }
 Sub(301){	|: [2 l16 ddrdrcdr8. l8 c : fc ] \ gc :| "ac }
 Sub(302){	 }
 Sub(310){	 }
@@ -37,9 +37,9 @@ Sub(401){	$s4m En* q10 v2 o7 gcg [4 v3 $s4s  En* q10 v2 o7 gcg : v4 $s4b En* q10
 
 BGM(0) {
 	
-TR1	S100 S101 /* S102 S110 S111 */
-TR2	S200 /* S201 S202 S210 S211 */
-TR3	S300 /**/ S301 S301 S301 S301 /* S302 S310 S311 */
-TR4 S400 S401 S401 S401 S401
+TR1	S100 L S101 /* S102 S110 S111 */
+TR2	S200 L S201
+TR3	S300 L S301 /* S302 S310 S311 */
+TR4 S400 L S401
 }
 
