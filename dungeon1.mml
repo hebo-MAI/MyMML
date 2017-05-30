@@ -5,6 +5,10 @@
 #title		"Dungeon 1 from Sea Master"
 #composer	"hebo-MAI"
 
+/******
+ * 267 Byte
+ */
+
 
 E(0) {	3 (6,8,4) L 5 6 6 R (6,1,9) L 1 }
 E(1) {	(12,-6,4) L 9 8 7 R (3,-3,3) }
@@ -17,29 +21,29 @@ $s4m = { En0 q0 o1c}
 $s4b = { q5 En1 o3c  }
 $s4s = { q8 En* o2g+ }
 
-Sub(100){	t96 Ev0 Em100 /*@2*/ }
-Sub(101){	o4 |: l2 age l4 \ fcd2.r r-1 :| `cgd2.r r-1 |: l2 dc"g l4 fed2.r r-1 \ > :| }
+$S100 = {	t96 Ev0 Em100 /*@2*/ }
+$S101 = {	o4 |: l2 age l4 \ fcd2.r r-1 :| `cgd2.r r-1 |: l2 dc"g l4 fed2.r r-1 \ > :| }
 Sub(102){	 }
 Sub(110){	 }
 Sub(111){	 }
-Sub(200){	Ev1 @3 /*o5*/ l16 }
-Sub(201){	v4 fr8dr4 er8dr4 cr8"ar4 gr8cr4 |: [2 fr-8fr-4 : v2 ] v4 _-1 \ :| _0 }
+$S200 = {	Ev1 @3 /*o5*/ l16 }
+$S201 = {	v4 fr8dr4 er8dr4 cr8"ar4 gr8cr4 |: fr-8fr-4 v2  fr-8fr-4 v4 _-1 \ :| _0 }
 Sub(202){	}
 Sub(210){	 }
 Sub(211){	 }
-Sub(300){	o3 q1 }
-Sub(301){	|: [2 l16 ddrdrcdr8. l8 c : fc ] \ gc :| "ac }
+$S300 = {	o3 q1 }
+$S301 = {	|: [2 l16 ddrdrcdr8. l8 c : fc ] \ gc :| "ac }
 Sub(302){	 }
 Sub(310){	 }
 Sub(311){	 }
-Sub(400){	Rm0 @0 l8 }
+$S400 = {	Rm0 @0 l8 }
 Sub(401){	En* q10 v2 o7 gcg }
 
 BGM(0) {
 	
-TR1	S100 L S101 /* S102 S110 S111 */
-TR2	S200 L S201
-TR3	S300 L S301 /* S302 S310 S311 */
-TR4 S400 L v4 $s4m S401 [4 ) $s4s  S401 : v4 $s4b S401 ]
+TR1	$S100 L $S101 /* S102 S110 S111 */
+TR2	$S200 L $S201
+TR3	$S300 L $S301 /* S302 S310 S311 */
+TR4 $S400 L v4 $s4m S401 [4 ) $s4s  S401 : v4 $s4b S401 ]
 }
 
