@@ -1,13 +1,9 @@
-#BGM	1
+#BGM	2
 
 #Code "bin/nsd.bin"
 
-#title		"Dungeon 1 from Sea Master"
+#title		"Sea Master Musics"
 #composer	"hebo-MAI"
-
-/******
- * 267 Byte
- */
 
 
 E(0) {	3 (6,8,4) L 5 6 6 R (6,1,9) L 1 }
@@ -16,6 +12,7 @@ E(2) {	6 L 12 D3 (12,9,3) 10 D3 (10,13,3) R (10,2,4) 1 D4 L 0 }
 E(3) {	6 L 12 R (10,2,4) 1 D4 L 0 }
 E(100) { 0 D30  L (1,-2,7) (-1,2,7) }
 E(101) { L 0 }
+E(200) { L (1,-2,7) (-1,2,7)}
 
 $s4m = { En0 q0 o1c}
 $s4b = { q5 En1 o3c  }
@@ -39,11 +36,33 @@ Sub(311){	 }
 $S400 = {	Rm0 @0 l8 }
 Sub(401){	En* q10 v2 o7 gcg }
 
+
+// Dungeon 1
+;
+;  267 Bytes
+;
 BGM(0) {
 	
 TR1	$S100 L $S101 /* S102 S110 S111 */
 TR2	$S200 L $S201
 TR3	$S300 L $S301 /* S302 S310 S311 */
 TR4 $S400 L v4 $s4m S401 [4 ) $s4s  S401 : v4 $s4b S401 ]
+}
+
+$S1100 = {	t78  o4 @2 Ev0 Em200}
+$S1101 = {	r1r4. |: l16 e-f | g2 f8c8 | d2+8 |e-f\e-dc4. |<b-8a-8 a-4.g8r8> :| e-2 f8e-8f4.g8r8 }
+$S1103 = {	ga-b-`cb-2 a-8g8 a-4.f8r8 fga-b- a-2g8f8 g4.e-8r8 cd e-2c8d8 e-2d8c8 c2r8dc g2r8  }
+$S1200 = {	o3 q8 l8 v6 @1}
+$S1201 = {	[4 ce-g ] }
+$S1202 = {	|: [2 ce-g ] [2 "b-df] [2 "a-ce-] \ "a-cd "gce- :| "gcd cfg }
+$S1300 = {	o3 }
+$S1301 = {	l1 c.-8 r8 c2.<b-2. }
+
+// Town 1
+BGM(1) {
+TR1 $S1100 $S1101 $S1103
+TR2 $S1200 $S1201 $S1202
+TR3 $S1300 $S1301
+TR4
 }
 
