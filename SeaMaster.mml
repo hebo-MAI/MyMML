@@ -58,18 +58,20 @@ $S1101 = {	r1r4. |: l16 e-f | g2 f8c8 | d2+8 |e-f\e-dc4. |<b-8a-8 a-4.g8r8> :| e
 $S1103 = {	ga-b-`cb-4. a-8g8 | a-4.f8r8 fg | a-b- a-4.g8f8 | g4.e-8r8 cd | e-2c8d8 | e-2d8c8 | c4r8c8d8c8 g2r8  }
 $S1110 = {	E@1000 En2000 Em102 Ev4
             |: a-b- | l8 `c4.rb-a- | b-4r>e-4g | f4.c.r16c16d16 | e4.c4r | e-4.cre- | dc<b-\b-a-b-> | c2r l16 dc | c4<bab8r8 :| b-4>d8 d2.c2. }
-$S1200 = {	o3 q8 l8 v6 @1}
-$S1201 = {	[4 ce-g ] }
-$S1202 = {	|: [2 ce-g] [2 "b-df] [2 "a-ce-] \ "a-cd "gce- :| "gcd cfg }
-$S1203 = {	[2 e-gb-] [2 dfa-] [2 cfa-] ce-gb-ge- [2 "a-ce-] [2 "gce-] [3"gcd] "br4 }
-$S1300 = {	o3 }
-$S1301 = {	l1 c.-8r8 c2.<b-2. a-2. a-4.g4r8 }
+$S1300 = {	o4 q1 l8}
+$S1301 = {	[4 ce-g ] }
+$S1302 = {	|: ce-gce-g | "b-df"b-df | "a-ce-"a-ce- | \ "a-cd "gce- :| "gcd cfg }
+$S1303 = {	ce-gce-g | [4 cfa-]  | ce-gb-ge- | "a-ce-"a-ce- | "gce-"gce- | "a-cd"a-cd | "gcd "br4 }
+$S1304 = {	|: ce-g`cge- | "b-e-gb-ge- | d-fa-`cr4 | ceg`cr4 | "a-ce-a-e-c | "gcde-\c<g | fa->cfa-b+ | "gce-g16b16`db :| <b-g |  g>cdg>cd c<ge-c<ge- }
+$S1200 = {	@1 v2 r1. }
+$S1201 = {	|: o4 e-2. | "b-2. | c2.  | \ c4. "b-4r8 :| d4.e-4r8 }
+$S1202 = {	g2. | f4.d4r8 | f2. | e-4.c4r8 | c2. | c2. | "a-2. |  "g4. v4 g8a-8b-8 }
 
 // Town 1
 BGM(1) {
 TR1 $S1100 $S1101        $S1103 $S1110
-TR2 $S1200 $S1201 $S1202 $S1203
-TR3 $S1300 $S1301
+TR2 $S1200 $S1201 $S1202
+TR3 $S1300 $S1301 $S1302 $S1303 $S1304
 TR4
 }
 
