@@ -1,4 +1,4 @@
-#BGM	2
+#BGM	3
 
 #Code "bin/nsd.bin"
 
@@ -69,11 +69,35 @@ $S1302 = {	|: ce-gce-g | "b-df"b-df | "a-ce-"a-ce- | \ "a-cd "gce- :| "gcd cfg }
 $S1303 = {	ce-gce-g | [4 cfa-]  | ce-gb-ge- | "a-ce-"a-ce- | "gce-"gce- | "a-cd"a-cd | "gcd "br4 }
 $S1304 = {	|: ce-g`cge- | "b-e-gb-ge- | d-fa-`cr4 | ceg`cr4 | "a-ce-a-e-c | "gcde-\c<g | fa->cfa-b+ | "gce-g16b16`db :| <b-g |  g>cdg>cd c<ge-c<ge- }
 
+
+$S1401 = {	Rm0 q10 l8 v1 o7 d ) q9 gg }
+$S1402 = {	q10 v2 o7 [9g] v1 q4 c q10 v2 gg }
+$S1403 = {	q9 v3 d v1 q4 c v3 Q1 g16g16 }
+
 // Town 1
 BGM(1) {
 TR1 L $S1100 $S1101        $S1103 $S1110
 TR2 L $S1200 $S1201 $S1202 $S1203
 TR3 L $S1300 $S1301 $S1302 $S1303 $S1304
-TR4
+TR4 L ;[20 $S1401 ] [3$S1402] [3$S1401] $S1403
 }
 
+$Sv201 = {	v4 }
+$Sv202 = {	v6 }
+$S2100 = {	t130 l6  $Sv202 r-1 }
+$S2101 = {	|: r-1 | e"gcerd | c2+6 d $Sv201 e-%1 $Sv202 e6-%1 | g2+6 $Sv201 g+%2 $Sv202 a6-%2 e |
+			g2 rg \ f+ | f2+6"a $Sv201 e%1 $Sv202 f6-%1 | d2 r <bg | >e2.r4 :|
+			a | > crr-crr- | c3<afec+ | d1-4 rr-8 }
+
+$S2200 = {	o5 /*@2*/ Rm0 v6 }
+$S2201 = {	l2 eg | ag | }
+
+$S2300 = {	}
+$S2301 = {	l6 "gcdedc | dce"g2 }
+
+// Town 2
+BGM(2){
+TR1 $S2100 $S2101
+TR2 $S2200 $S2201
+TR3 $S2300 $S2301
+}
