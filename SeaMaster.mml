@@ -15,8 +15,10 @@ E(100) { 0 D30  L (1,-2,7) (-1,2,7) }
 E(101) { L 0 }
 E(102) { 0 D20 L (2,-4,6) (-4,3,6)}
 E(200) { L (1,-2,7) (-1,2,7)}
+E(201) { 12 12 L 15 }
 E(1000){ 1 L 2 R L 1 }
 E(2000){ -12 L 0 }
+E(2001){ -1 -1 L 0 }
 
 $s4m = { En0 q0 o1c}
 $s4b = { q5 En1 o3c  }
@@ -82,18 +84,19 @@ TR3 L $S1300 $S1301 $S1302 $S1303 $S1304
 TR4 L ;[20 $S1401 ] [3$S1402] [3$S1401] $S1403
 }
 
-$Sv201 = {	v4 }
-$Sv202 = {	v6 }
-$S2100 = {	t130 l6  $Sv202 r-1 }
-$S2101 = {	|: r-1 | e"gcerd | c2+6 d $Sv201 e-%1 $Sv202 e6-%1 | g2+6 $Sv201 g+%2 $Sv202 a6-%2 e |
-			g2 rg \ f+ | f2+6"a $Sv201 e%1 $Sv202 f6-%1 | d2 r <bg | >e2.r4 :|
+$Sv201 = {	Ev201 En2001 }
+$Sv202 = {	Ev* En* }
+$S2100 = {	t130 l6  v6 r-1 }
+$S2101 = {	|: r-1 | e"gcerd | c2+6 d $Sv201 e6 $Sv202 | g2+6 $Sv201 a6 $Sv202 e |
+			g2 rg \ f+ | f2+6"a $Sv201 f6 $Sv202 | d2 r <bg | >e2.r4 :|
 			a | > crr-crr- | c3<afec+ | d1-4 rr-8 }
 
 $S2200 = {	o5 /*@2*/ Rm0 v6 }
 $S2201 = {	l2 eg | ag | }
 
 $S2300 = {	}
-$S2301 = {	l6 "gcdedc | dce"g2 }
+$S2301 = {	l6 [4 "c"gce:c"g] dc "e"bege"b | "e"bg"e-"bg | "d"afaf"a | "g"bdgd"g | "c"gcec"g6-%1 r%1 | "g"bd "bdg |
+			| [2 "c"gcec"g] |"e"bege"b | "e"bg"e-"bg | "adfafd | "fcfafc | "g"bdgd"g}
 
 // Town 2
 BGM(2){
