@@ -88,7 +88,7 @@ $Sv201 = {	Ev201 En2001 }
 $Sv202 = {	Ev* En* }
 $S2100 = {	t130 l6  v6 e2g2a2g2 }
 $S2101 = {	|: e"gcerd | c2+6 d $Sv201 e6 $Sv202 | g2+6 $Sv201 a6 $Sv202 e |
-			g2 rg \ f+ | f2+6"a $Sv201 f6 $Sv202 | d2 r <bg | >e2.r4 r1:|
+			g2 rg \ f+ | f2+6"a $Sv201 f6 $Sv202 | d2 r <bg | >e2.r4 r-1:|
 			a | > crr-crr- | c3<afec+ | d1-4 rr-8 }
 
 $S2200 = {	o4 /*@2*/ Rm0 v3 }
