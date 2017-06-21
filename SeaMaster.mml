@@ -84,6 +84,9 @@ TR3 L $S1300 $S1301 $S1302 $S1303 $S1304
 TR4 L ;[20 $S1401 ] [3$S1402] [3$S1401] $S1403
 }
 
+Sub(2290){ o6 Ev1 v9 l12 q2 }
+Sub(2291){ Ev* v3 o4 q0 l6 }
+
 $Sv201 = {	Ev201 En2001 }
 $Sv202 = {	Ev* En* }
 $S2100 = {	t130 l6  v6 e2g2a2g2 }
@@ -91,9 +94,11 @@ $S2101 = {	|: e"gcerd | c2+6 d $Sv201 e6 $Sv202 | g2+6 $Sv201 a6 $Sv202 e |
 			g2 rg \ f+ | f2+6"a $Sv201 f6 $Sv202 | d2 r <bg | >e2.r4 r-1:|
 			a | > crr-crr- | c3<afec+ | d1-4 rr-8 }
 
-$S2200 = {	o4 /*@2*/ Rm0 v3 }
-$S2201 = {	l6 g>cdedcdce o6 v9 Ev1 l12 ec<geg>c  }
-$S2202 = {	Ev* v3 l6 o4 c2+6d"g  o6 Ev1 v9 l12 e(c(g(c v8 e(c(g(cc(c q2 c(c }
+$S2200 = {	/*@2*/ S2291 }
+$S2201 = {	g>cdedcdce S2290 ec<geg>c  }
+$S2202 = {	S2291 c2+6d"g  S2290 ec(gc v8 ec(gc c q4 (c c(c
+			S2291 e2+6 fc S2290 g"b(b"b v8 g"b(b"b g(g q4 g(g
+			S2291 "f"afd2 <gb>cd"b3 S2290 cc(c q4 c(c(c v9 q2 dd(d q4 d(d(d v9 <bg`dgb`g>dgg( q4 gg(g }
 
 $S2300 = {	}
 $S2301 = {	l6 [4 "c"gce:c"g] dc "e"bege"b | "e"bg"e-"bg | "d"afaf"a | "g"bdgd"g | "c"gcec"g6-%1 r%1 | "g"bd "bdg |
