@@ -101,7 +101,9 @@ $S2201 = {	g>cdedcdce S2290 ec<geg>c  }
 $S2202 = {	|: S2291 c2+6d"g  S2290 ec(gc v8 ec(gc c q4 (c c(c
 			S2291 e2+6 fc S2290 g"b(b"b v8 g"b(b"b g(g q4 g(g
 			S2291 \ "f"afd2 <gb>cd"b3 S2290 cc(c q4 c(c(c v9 q2 dd(d q4 d(d(d v9 <bg`dgb`g>dgg( q4 gg(g :| 
-			err-frr-a2f3a | <g2 b>cc+dfg }
+			err-frr-a2f3a | <g2 b>cc+dfg r2 }
+$S2211 = {	err-err- | ereec+"a | d"fc+d2 | >g"agfed < |
+			grr-grr- | b3agfd< | gebb+1   }
 
 $S2300 = {	}
 $S2301 = {	l6 [4 "c"gce:c"g] dc "e"bege"b | "e"bg"e-"bg | "d"afaf"a | "g"bdgd"g | "c"gcec"g6-%1 r%1 | "g"bd "bdg |
@@ -111,6 +113,6 @@ $S2311 = {	o3 brrbeg | ara>c+e"a | drrdr"a | drdfed }
 // Town 2
 BGM(2){
 TR1 $S2100 $S2101        $S2110 $S2111
-TR2 $S2200 $S2201 $S2202
+TR2 $S2200 $S2201 $S2202 $S2211
 TR3 $S2300 $S2301 $S2311
 }
