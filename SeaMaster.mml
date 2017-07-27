@@ -95,7 +95,7 @@ $S2101 = {	|: e"gcerd | c2+6 d $Sv201 e6 $Sv202 | g2+6 $Sv201 a6 $Sv202 e |
 			$Sv201 a $Sv202 | > crr-crr- | c3<afec+ | d1-4 r8r-8 }
 $S2110 = {	v2 dfg @2 v6 Em200 }
 $S2111 = {	def | grrgrr grb-age | g"agf2.r4  de-e | frrfrrfrr fed | "b"ga-g2r4r-4 }
-$S2112 = { v8 eff+ | grrgrr grb-a b-12a12g12e12 | g"agf2b+3r6r-6 cd | e2.r2r-4 ceg | g1r2r-2 }
+$S2112 = { v7 eff+ | grrgrr grb-a b-12a12g12e12 | g"agf2b+3r6r-6 cd | e2.r2r-4 ceg | g1r2r-2 }
 
 $S2200 = {	/*@2*/ S2291 }
 $S2201 = {	g>cdedcdce S2290 ec<geg>c  }
@@ -110,11 +110,12 @@ $S2211 = {	[2 ger-12e12] | grb-age | g"agf2 | >g"agfed < |
 $S2300 = {	}
 $S2301 = {	l6 [4 "c"gce:c"g] dc "e"bege"b | "e"bg"e-"bg | "d"afaf"a | "g"bdgd"g | "c"gcec"g6-%1 r%1 | "g"bd "bdg |
 			| [2 "c"gcec"g] |"e"bege"b | "e"bg"e-"bg | "adfafd | "fcfafc | "g"bdgd<g | dg>dgdc | }
-$S2311 = {	o3 brrbeg | ara>c+e"a | drrdr"a | drdfed }
+$S2311 = {	o3 brrbeg | ara>c+e"a | drrdr"a | drdfed | <gr3drg | brgb>cd | cr3cr"g | crcedc< }
+$S2312 = {	arrcre | areab>c+ | drr"dr"a | drdfg+f | grrcr"g | grg<gb+g| brr`drb | g1 }
 
 // Town 2
 BGM(2){
 TR1 $S2100 $S2101        $S2110 $S2111 $S2112
 TR2 $S2200 $S2201 $S2202 $S2210 $S2211
-TR3 $S2300 $S2301 $S2311
+TR3 $S2300 $S2301 $S2311 $S2312
 }
