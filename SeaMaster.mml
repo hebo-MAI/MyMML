@@ -105,7 +105,10 @@ $S2202 = {	|: S2291 c2+6d"g  S2290 ec(gc v8 ec(gc c q4 (c c(c
 			err-frr-a2f3a | <g2 b>cc+dfg r2 }
 $S2210 = {	D0 }
 $S2211 = {	[2 ger-12e12] | grb-age | g"agf2 | >g"agfed < |
-			[3 fgr-12b12] | fed | "b"ga-g2r2   }
+			[3 fgr-12b12] | fed | "b"ga-g2r2 eff+   }
+$S2212 = {	// TODO : change envelope here
+			l12 [3 "ac+ege:c+]g b+agage | [2 d"adfaf] | afcfafg+b+g+fc"g+ | "gceceg`e`cg`cge |
+			 gceg>cegec<gec | <gb`db>dgbgb>dgd | bg[5b`d(]}
 
 $S2300 = {	}
 $S2301 = {	l6 [4 "c"gce:c"g] dc "e"bege"b | "e"bg"e-"bg | "d"afaf"a | "g"bdgd"g | "c"gcec"g6-%1 r%1 | "g"bd "bdg |
@@ -116,6 +119,6 @@ $S2312 = {	arrcre | areab>c+ | drr"dr"a | drdfg+f | grrcr"g | grg<gb+g| brr`drb 
 // Town 2
 BGM(2){
 TR1 $S2100 $S2101        $S2110 $S2111 $S2112
-TR2 $S2200 $S2201 $S2202 $S2210 $S2211
+TR2 $S2200 $S2201 $S2202 $S2210 $S2211 $S2212
 TR3 $S2300 $S2301 $S2311 $S2312
 }
