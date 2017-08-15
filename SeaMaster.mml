@@ -1,4 +1,4 @@
-#BGM	3
+#BGM	4
 
 #Code "bin/nsd.bin"
 
@@ -19,6 +19,11 @@ E(201) { 12 12 L 15 }
 E(1000){ 1 L 2 R L 1 }
 E(2000){ -12 L 0 }
 E(2001){ -1 -1 L 0 }
+
+E(5000){ L 0 0 4 4 7 7 R L 0 0 4 4 7 7 }	// Major Chord (D,F+,A)
+E(5001){ L 0 0 5 5 9 9 R L 0 0 5 5 9 9 }	// Major Chord (D,G,B)
+E(5002){ L 0 0 4 4 5 5 R L 0 0 4 4 5 5 }	// Chord (D,F+,G)
+
 
 $s4m = { En0 q0 o1c}
 $s4b = { q5 En1 o3c  }
@@ -121,4 +126,28 @@ BGM(2){
 TR1 $S2100 $S2101        $S2110 $S2111 $S2112
 TR2 $S2200 $S2201 $S2202 $S2210 $S2211 $S2212
 TR3 $S2300 $S2301 $S2311 $S2312
+}
+
+
+$S3100 = {	/*@2 o4*/ Em200 t135 l8 v11 }
+$S3101 = {	[2 ar16a16ra4gf+g ] a4dc+4d4d ed4c+4d4d 
+			"ar16d16rd2+8r1r-1 v8 }
+Sub(3102){	l8 o5 c+4.d4."a4 | c+4.d4.e4 | f+4edrdc+d2 "a4de4 |
+			 d2.d4 | c+.d16r a4.gf+ | ed2+8de | rf+rer }
+$S3102 = {	S3102 }
+
+$S3200 = {	/* o4 */ @1 En5000 v3 l1 }
+$S3201 = {	d d d En5001 d2 En5002 d2 En5001 "a1r1r-1 }
+$S3202 = { D1 En* @2 v4 S3102 }
+
+
+$S3300 = {	Em200 o3 l1}
+$S3301 = {	d f+ a b2g2 d1+1 }
+$S3302 = {	q4 l8 ggggaaaa }
+
+// Song 1
+BGM(3){
+TR1 $S3100 $S3101 $S3102
+TR2 $S3200 $S3201 $S3202
+TR3 $S3300 $S3301 $S3302
 }
