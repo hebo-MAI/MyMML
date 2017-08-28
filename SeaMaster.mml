@@ -129,12 +129,15 @@ TR3 $S2300 $S2301 $S2311 $S2312
 }
 
 
-$S3100 = {	/*@2 o4*/ Em200 t135 l8 v11 }
+$S3100 = {	/*@2 o4*/ Em200 t150 l8 v11 }
 $S3101 = {	[2 ar16a16ra4gf+g ] a4dc+4d4d ed4c+4d4d 
 			"ar16d16rd2+8r1r-1 v8 }
 Sub(3102){	l8 o5 c+4.d4."a4 | c+4.d4.e4 | f+4edrdc+d2 "a4de4 |
 			 d2.d4 | c+.d16r a4.gf+ | ed2+8de | rf+rer }
 $S3102 = {	S3102 }
+$S3110 = {	[2 o4 @1 "ac+ | drr-2. | g4f+e4f+ed | r4r-2+8 d : | c+4de4ef+d |
+			  r4r-2+8 d | "a4dd4rr-"a | "g4"bd4dde | rdrc+r | ] }
+$S3111 = {	b4a4f+4g4 }
 
 $S3200 = {	/* o4 */ @1 En5000 v3 l1 }
 $S3201 = {	d d d En5001 d2 En5002 d2 En5001 "a1r1r-1 }
@@ -147,7 +150,7 @@ $S3302 = {	q4 l8 ggggaaaa }
 
 // Song 1
 BGM(3){
-TR1 $S3100 $S3101 $S3102
+TR1 $S3100 $S3101 $S3102 $S3110 $S3111
 TR2 $S3200 $S3201 $S3202
 TR3 $S3300 $S3301 $S3302
 }
