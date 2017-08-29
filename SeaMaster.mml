@@ -135,9 +135,9 @@ $S3101 = {	[2 ar16a16ra4gf+g ] a4dc+4d4d ed4c+4d4d
 Sub(3102){	l8 o5 c+4.d4."a4 | c+4.d4.e4 | f+4edrdc+d2 "a4de4 |
 			 d2.d4 | c+.d16r a4.gf+ | ed2+8de | rf+rer }
 $S3102 = {	S3102 }
-$S3110 = {	[2 o4 @1 "ac+ | drr-2. | g4f+e4f+ed | r4r-2+8 d : | c+4de4ef+d |
-			  r4r-2+8 d | "a4dd4rr-"a | "g4"bd4dde | rdrc+r | ] }
-$S3111 = {	b4a4f+4g4 }
+$S3110 = {	[2 o4 @1 "ac+ | drr-2. | : g4f+e4f+ed | r4r-2+8 d | c+4de4ef+d |
+			  r4r-2+8 d | "a4dd4rr-"a | "g4"bd4dde | d4.c+4 | ] }
+$S3111 = {	grgf+4.ed | r4r-2+8 d | b4a4f+4g4 | ardrarda4baf+dr dc+ | dd2+8"bf+ | e1 }
 
 $S3200 = {	/* o4 */ @1 En5000 v3 l1 }
 $S3201 = {	d d d En5001 d2 En5002 d2 En5001 "a1r1r-1 }
