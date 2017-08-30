@@ -11,6 +11,7 @@ E(1) {	(12,-6,4) L 9 8 7 R (3,-3,3) }
 E(2) {	6 L 12 D3 (12,9,3) 10 D3 (10,13,3) R (10,2,4) 1 D4 L 0 }
 E(3) {	6 L 12 R (10,2,4) 1 D4 L 0 }
 E(4)   { 3 (6,10,4) L 8 9 9 8 8 7 R L 1 }
+E(5)   { 3 (6,10,4) L 8 9 9 8 8 7 R L 5 }
 E(100) { 0 D30  L (1,-2,7) (-1,2,7) }
 E(101) { L 0 }
 E(102) { 0 D20 L (2,-4,6) (-4,3,6)}
@@ -130,18 +131,22 @@ TR3 $S2300 $S2301 $S2311 $S2312
 
 
 $S3100 = {	/*@2 o4*/ Em200 t150 l8 v11 }
-$S3101 = {	[2 ar16a16ra4gf+g ] a4dc+4d4d ed4c+4d4d 
+Sub(3101){	[2 ar16a16ra4gf+g ] a4dc+4d4d ed4c+4d4d }
+$S3101 = {	S3101
 			"ar16d16rd2+8r1r-1 v8 }
 Sub(3102){	l8 o5 c+4.d4."a4 | c+4.d4.e4 | f+4edrdc+d2 "a4de4 |
 			 d2.d4 | c+.d16r a4.gf+ | ed2+8de | rf+rer }
 $S3102 = {	S3102 }
 $S3110 = {	[2 o4 @1 "ac+ | drr-2. | : g4f+e4f+ed | r4r-2+8 d | c+4de4ef+d |
 			  r4r-2+8 d | "a4dd4rr-"a | "g4"bd4dde | d4.c+4 | ] }
-$S3111 = {	grgf+4.ed | r4r-2+8 d | b4a4f+4g4 | ardrarda4baf+dr dc+ | dd2+8"bf+ | e1 }
+$S3111 = {	grgf+4.ed | r4r-2+8 d | b4a4f+4g4 | ardrarda4baf+dr dc+ | dd2"bf+ e&| e2r }
+$S3112 = {	[2 aaa | brarbra a4 >dc+ : <a4 f+ga | grf+rerd f+4grar ] d4ef+4 | d2.r | o6 @0 Ev5 v5 ddrc+r<brar }
+$S3120 = {	o4 @2 Ev* v11 S3101 | [2 ar16a16ra4gf+g ] a4>dc+4<a4a | bf+4e4f+ed |
+			S3101 | "a4r r-4 "ade4r- g4f+edr r-1}
 
 $S3200 = {	/* o4 */ @1 En5000 v3 l1 }
 $S3201 = {	d d d En5001 d2 En5002 d2 En5001 "a1r1r-1 }
-$S3202 = { D1 En* @2 v4 S3102 }
+$S3202 = {	D1 En* @2 v4 S3102 }
 
 
 $S3300 = {	Em200 o3 l1}
@@ -150,7 +155,7 @@ $S3302 = {	q4 l8 ggggaaaa }
 
 // Song 1
 BGM(3){
-TR1 $S3100 $S3101 $S3102 $S3110 $S3111
+TR1 $S3100 $S3101 $S3102 $S3110 $S3111 $S3112 $S3120
 TR2 $S3200 $S3201 $S3202
 TR3 $S3300 $S3301 $S3302
 }
