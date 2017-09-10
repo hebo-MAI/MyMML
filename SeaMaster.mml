@@ -4,6 +4,7 @@
 
 #title		"Sea Master Musics"
 #composer	"hebo-MAI"
+#copyright  "Sea Master Project"
 
 
 E(0) {	3 (6,8,4) L 5 6 6 R (6,1,9) L 1 }
@@ -151,11 +152,14 @@ $S3202 = {	D1 En* @2 v4 S3102 }
 
 $S3300 = {	Em200 o3 l1}
 $S3301 = {	d f+ a b2g2 d1+1 }
-$S3302 = {	q4 l8 ggggaaaa }
+$S3302 = {	l8 [2q1gq6g][2q1aq6a] | q4drrd4"ade4  d4"a4.d<a | f+4a4>df+a+b4.r"b4ba4 |
+			"g"gg"gdgrd4 `dd dd`dra | e4`eee`era | rar>a4e<ae> }
+// TODO : ベースラインを独自のものに変更する
+$S3311 = {	d4r4.dr<g4 r4a4ra16&r16b4 r2b4f+4 r4f+4f+ag4 r2grg | >d4.r4drd | e4.r4e4<a | rara4ra4 }
 
 // Song 1
 BGM(3){
 TR1 $S3100 $S3101 $S3102 $S3110 $S3111 $S3112 $S3120
 TR2 $S3200 $S3201 $S3202
-TR3 $S3300 $S3301 $S3302
+TR3 $S3300 $S3301 $S3302        $S3311
 }
