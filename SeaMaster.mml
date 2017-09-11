@@ -118,7 +118,7 @@ $S2212 = {	// TODO : change envelope here
 			 gceg>cegec<gec | <gb`db>dgbgb>dgd | bg[5b`d(]}
 
 $S2300 = {	l6 [2 "c"gcec"g]}
-$S2301 = {	l6 [2 "c"gce:c"g] dc "e"bege"b | "e"bg"e-"bg | "d"afaf"a | "g"bdgd"g | "c"gcec"g6-%1 r%1 | "g"bd "bdg |
+$S2301 = {	l6 "c"gcec"g"c"gce dc "e"bege"b | "e"bg"e-"bg | "d"afaf"a | "g"bdgd"g | "c"gcec"g6-%1 r%1 | "g"bd "bdg |
 			| [2 "c"gcec"g] |"e"bege"b | "e"bg"e-"bg | "adfafd | "fcfafc | "g"bdgd<g | dg>dgdc | }
 $S2311 = {	o3 brrbeg | ara>c+e"a | drrdr"a | drdfed | <gr3drg | brgb>cd | cr3cr"g | crcedc< }
 $S2312 = {	arrcre | areab>c+ | drr"dr"a | drdfg+f | grrcr"g | grg<gb+g| brr`drb | g1 > }
