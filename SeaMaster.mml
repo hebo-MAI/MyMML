@@ -136,30 +136,32 @@ Sub(3101){	[2 ar16a16ra4gf+g ] a4dc+4d4d ed4c+4d4d }
 $S3101 = {	S3101
 			"ar16d16rd2+8r1r-1 v8 }
 Sub(3102){	l8 o5 c+4.d4."a4 | c+4.d4.e4 | f+4edrdc+d2 "a4de4 |
-			 d2.d4 | c+.d16r a4.gf+ | ed2+8de | rf+rer }
+			 d2.d4 | c+.d16r a4.gf+ | ed2+8de | rf+rerr- }
 $S3102 = {	S3102 }
 $S3110 = {	[2 o4 @1 "ac+ | drr-2. | : g4f+e4f+ed | r4r-2+8 d | c+4de4ef+d |
 			  r4r-2+8 d | "a4dd4rr-"a | "g4"bd4dde | d4.c+4 | ] }
 $S3111 = {	grgf+4.ed | r4r-2+8 d | b4a4f+4g4 | ardrarda4baf+dr dc+ | dd2"bf+ e&| e2r }
 $S3112 = {	[2 aaa | brarbra a4 >dc+ : <a4 f+ga | grf+rerd f+4grar ] d4ef+4 | d2.r | o6 @0 Ev5 v5 ddrc+r<brar }
 $S3120 = {	o4 @2 Ev* v11 S3101 | [2 ar16a16ra4gf+g ] a4>dc+4<a4a | bf+4e4f+ed |
-			S3101 | "a4r r-4 "ade4r- g4f+edr r-1}
+			S3101 | "a4r r-4 "aderr- g4f+edr r-1}
 
 $S3200 = {	/* o4 */ @1 En5000 v3 l1 }
 $S3201 = {	d d d En5001 d2 En5002 d2 En5001 "a1r1r-1 }
-$S3202 = {	D1 En* @2 v4 S3102 }
+$S3202 = {	D1 En* @1 v3 S3102 }
+$S3210 = {	D0 @1 Ev5 v6 r-4 o5 En2000 }
+$S3211 = {	[2 d`daf+`daf+a] [2 dbgdbgdg] }
 
 
 $S3300 = {	Em200 o3 l1}
 $S3301 = {	d f+ a b2g2 d1+1 }
 $S3302 = {	l8 [2q1gq6g][2q1aq6a] | q4drrd4"ade4  d4"a4.d<a | f+4a4>df+a+b4.r"b4ba4 |
-			"g"gg"gdgrd4 `dd dd`dra | e4`eee`era | rar>a4e<ae> }
+			"g4g"gdgrd4 `dd dd`dra | e4`eee`era | rar>a4e<ae> }
 // TODO : ベースラインを独自のものに変更する
-$S3311 = {	d4r4.dr<g4 r4a4ra16&r16b4 r2b4f+4 r4f+4f+ag4 r2grg | >d4.r4drd | e4.r4e4<a | rara4ra4 }
+$S3311 = {	d4r4.dr<g4 r4a4ra16&r16b4 r2b4f+4 r4f+4f+ | ag4 r2grg | >d4.r4drd | e4.r4e4<a | rara4ra4 }
 
 // Song 1
 BGM(3){
 TR1 $S3100 $S3101 $S3102 $S3110 $S3111 $S3112 $S3120
-TR2 $S3200 $S3201 $S3202
+TR2 $S3200 $S3201 $S3202 $S3210 $S3211
 TR3 $S3300 $S3301 $S3302        $S3311
 }
